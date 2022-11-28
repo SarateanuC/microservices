@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      - id: 20221128_create-employee
+        author: carolina.sarateanu
+        failOnError: true
+        changes:
+      - sql:
+          dbms: 'postgresql'
+          splitStatements: false
+          sql: CREATE TABLE employee (
+            id UUID PRIMARY KEY,
+            name varchar NOT NULL,
+            company_id uuid NOT NULL,
+            address_id uuid,
+            status varchar,
+            CONSTRAINT fk_address_id
+            FOREIGN KEY (address_id)
+            REFERENCES address(address_id)
+            );

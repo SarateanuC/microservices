@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      - file: 20221128_create-company.yml
+      - relativeToChangelogFile: true
+  - include:
+      - file: 20221128_insert-company.yml
+      - relativeToChangelogFile: true
+  - include:
+      - file: 20221128_create-address.yml
+      - relativeToChangelogFile: true
+  - include:
+      - file: 20221128_insert-address.yml
+      - relativeToChangelogFile: true
+  - include:
+      - file: 20221128_create-employee.yml
+      - relativeToChangelogFile: true
+  - include:
+      - file: 20221128_insert-employee.yml
+      - relativeToChangelogFile: true

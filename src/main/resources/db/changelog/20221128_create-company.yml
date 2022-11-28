@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20221128_create-company.yml
+      author: carolina.sarateanu
+      failOnError: true
+      changes:
+        - sql:
+            sql: CREATE TABLE company (
+              company_id UUID PRIMARY KEY,
+              name VARCHAR(50) NOT NULL
+              );

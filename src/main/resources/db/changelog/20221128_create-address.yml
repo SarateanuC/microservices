@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20221128_create-address
+      author: carolina.sarateanu
+      failOnError: true
+      changes:
+        - sql:
+            sql: CREATE TABLE address (
+              address_id UUID PRIMARY KEY,
+              name VARCHAR(50) NOT NULL
+              );
