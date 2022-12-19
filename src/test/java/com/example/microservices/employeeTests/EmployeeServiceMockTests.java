@@ -70,6 +70,7 @@ public class EmployeeServiceMockTests {
         when(employeeMapper.selectAllEmployees()).thenReturn(List.of(employeeDbo2,employeeDbo1));
         assertThat(employeeServiceImpl.selectAllEmployees().get(0).getName()).isEqualTo(employeeDbo2.getName());
         assertThat(employeeServiceImpl.selectAllEmployees().size()).isEqualTo(2);
+
     }
 
     @Test
